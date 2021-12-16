@@ -2,14 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import NavbarWeb from './Navbar';
-import Search from './Search';
+import Search1 from './Search1';
 import reportWebVitals from './reportWebVitals';
+
 
 
 ReactDOM.render(
   <React.StrictMode>
     <NavbarWeb />
-    <Search />
+
+    <Search1 />
+
   </React.StrictMode>,
   document.getElementById('root')
   );
