@@ -1,23 +1,15 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from "react-dom";
 import './index.css';
-import NavbarWeb from './Navbar';
-import Search1 from './Search1';
-import reportWebVitals from './reportWebVitals';
-
-
+import NavbarWeb from './navbar/Navbar';
+import Search from './Search';
+import BaseLogin from './BaseLogin';
 
 ReactDOM.render(
-  <React.StrictMode>
+  <div>
     <NavbarWeb />
-
-    <Search1 />
-
-  </React.StrictMode>,
+    <Search />
+  </div>,
   document.getElementById('root')
   );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

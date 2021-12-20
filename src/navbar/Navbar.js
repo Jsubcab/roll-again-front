@@ -1,6 +1,7 @@
-import logo from './logo_dice.svg';
-import { Container, Navbar, Nav} from 'react-bootstrap';
-import './Navbar.css';
+import logo from '../images/logo_dice.svg';
+import { Container, Navbar, Nav } from 'react-bootstrap';
+import { LinkContainer } from "react-router-bootstrap";
+import '../styles/Navbar.css';
 
 function NavbarWeb() {
     return (
@@ -9,12 +10,14 @@ function NavbarWeb() {
   <Navbar.Brand><img src={logo} className="Roll-again-logo" alt="logo" /> Roll again</Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse className="justify-content-end" id="responsive-navbar-nav">
-    <Nav>
-      <Nav.Link href="#home">Home</Nav.Link>
+    <Nav activeKey={window.location.pathname}>
+    <LinkContainer to="/">
+      <Nav.Link>Home</Nav.Link>
+      </LinkContainer>
       <Nav.Link href="#items">Items</Nav.Link>
     </Nav>
     <Nav>
-      <Nav.Link href="#login">Login</Nav.Link>
+      <Nav.Link to='/Login'>Login</Nav.Link>
     </Nav>
   </Navbar.Collapse>
   </Container>
