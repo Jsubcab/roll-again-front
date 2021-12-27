@@ -4,6 +4,7 @@ import Navbar from './components/navbar/Navbar';
 import UserPanel from './UserPanel';
 import Search from './Search';
 import { Route, Switch } from 'react-router-dom';
+import Signin from './components/signin/Signin';
 
 function App(){
 
@@ -33,6 +34,7 @@ function App(){
                 <Switch>
                     <Route exact path='/' component={Search} />
                     <Route path='/login' component={UserPanel} />
+                    <Route path='/signin' component={Signin} />
                 </Switch>
             </div>
         );
