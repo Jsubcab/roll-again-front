@@ -8,7 +8,10 @@ class Signin extends React.Component {
     username: "",
     password: "",
     password2: "",
-    email: ""
+    email: "",
+    city: "",
+    zipcode: "",
+    phone: "",
   };
 
   handleChange = (e) => {
@@ -19,7 +22,7 @@ class Signin extends React.Component {
 
   handleSubmit = (event) => {
     event.preventDefault();
-    const { username, password, password2, email } = this.state;
+    const { username, password, password2, email, city, zipcode, phone } = this.state;
     if (password !== password2) {
       alert("Passwords do not match, please enter again your password");
     } else {
@@ -28,7 +31,10 @@ class Signin extends React.Component {
         data: {
             username,
           password,
-          email
+          email,
+          city,
+          zipcode,
+          phone
         }
       })
         .then((response) => {
@@ -43,7 +49,7 @@ class Signin extends React.Component {
   };
 
   render() {
-    const { username, email, password, password2 } = this.state;
+    const { username, email, password, password2, city, zipcode, phone } = this.state;
 
     return (
       <div className="wrapper">
@@ -90,6 +96,33 @@ class Signin extends React.Component {
               name="password2"
               placeholder="Confirm Password"
               type="password"
+              required
+            />
+            <input
+            className="fadeIn fifth"
+              value={city}
+              onChange={this.handleChange}
+              name="city"
+              placeholder="City"
+              type="text"
+              required
+            />
+                        <input
+            className="fadeIn fifth"
+              value={zipcode}
+              onChange={this.handleChange}
+              name="zipcode"
+              placeholder="Zipcode"
+              type="text"
+              required
+            />
+                        <input
+            className="fadeIn fifth"
+              value={phone}
+              onChange={this.handleChange}
+              name="phone"
+              placeholder="Phone"
+              type="text"
               required
             />
 
