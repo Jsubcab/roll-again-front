@@ -27,8 +27,8 @@ export default function Login({ setToken }) {
       }
 
   return(
-    <div class="wrapper fadeInDown">
-      <div id="formContent">
+    <div class="wrapper">
+      <div className="login-base">
         <div className="login-wrapper">
           <div class="fadeIn first">
             <h3>Login</h3>
@@ -36,7 +36,7 @@ export default function Login({ setToken }) {
         <form onSubmit={handleSubmit}>
             <input type="text" name="user" id="login" class="fadeIn second" placeholder="login" onChange={e => setUserName(e.target.value)}/>
             <input type="password" name="password" id="password" class="fadeIn third" placeholder="password" onChange={e => setPassword(e.target.value)}/>
-            <input type="submit" class="fadeIn fourth" value="Log In"/>
+            <input type="submit" className="fadeIn fourth" value="Log In"/>
         </form>
         </div>
       </div>

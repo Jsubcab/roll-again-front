@@ -1,9 +1,9 @@
-import logo from '../images/logo_dice.svg';
+import logo from '../../images/logo_dice.svg';
 import { Container, Navbar, Nav } from 'react-bootstrap';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import '../styles/Navbar.css';
+import '../../styles/Navbar.css';
 
-function NavbarWeb() {
+const NavbarWeb = (props) => {
+console.log(props);
     return (
 <Navbar collapseOnSelect expand="lg" variant="light" bg="light">
   <Container>
@@ -11,10 +11,17 @@ function NavbarWeb() {
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse className="justify-content-end" id="responsive-navbar-nav">
     <Nav>
-      <Nav.Link to="/" activeStyle>Home</Nav.Link>
-    </Nav>
-    <Nav>
-      <Nav.Link to='/login' activeStyle>Login</Nav.Link>
+      <Nav.Link href="/" activeStyle>Home</Nav.Link>
+
+      {props.isLoggedIn ? (
+        <Nav>
+        <Nav.Link className='profile' href='/profile'>Profile</Nav.Link>
+        <Nav.Link className='logout' href='/' onClick={props.logout()} >Logout</Nav.Link>
+        </Nav>
+      ) : (
+      <Nav.Link href='/login' activeStyle>Login</Nav.Link>
+      )}
+
     </Nav>
   </Navbar.Collapse>
   </Container>

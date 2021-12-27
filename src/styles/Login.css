@@ -41,6 +41,11 @@ h2 {
   padding: 20px;
 }
 
+.login-base{
+  padding: 30px;
+  text-align: center;
+}
+
 #formContent {
   -webkit-border-radius: 10px 10px 10px 10px;
   border-radius: 10px 10px 10px 10px;
