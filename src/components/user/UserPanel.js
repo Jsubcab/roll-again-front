@@ -1,8 +1,7 @@
 import React from "react";
-import "./UserPanel.css";
-import UserDashboard from './components/user/UserDashboard';
-import Login from './components/login/Login';
-import useToken from './components/hook/useToken';
+import "../../styles/UserPanel.css";
+import Login from '../login/Login';
+import useToken from '../hook/useToken';
 
 function UserPanel() {
   
@@ -15,7 +14,7 @@ function UserPanel() {
   return (
     <div className="wrapper">
       <h1>Application</h1>
-      <UserDashboard/>
+      <h2>Dashboard</h2>
     </div>
   );
 };

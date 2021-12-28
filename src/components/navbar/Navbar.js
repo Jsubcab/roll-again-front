@@ -11,15 +11,16 @@ console.log(props);
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse className="justify-content-end" id="responsive-navbar-nav">
     <Nav>
-      <Nav.Link href="/" activeStyle>Home</Nav.Link>
+      <Nav.Link href="/">Home</Nav.Link>
 
       {props.isLoggedIn ? (
         <Nav>
+        <Nav.Link className='addProduct' href='/addProduct'>Add product</Nav.Link>
         <Nav.Link className='profile' href='/profile'>Profile</Nav.Link>
         <Nav.Link className='logout' href='/' onClick={props.logout()} >Logout</Nav.Link>
         </Nav>
       ) : (
-      <Nav.Link href='/login' activeStyle>Login</Nav.Link>
+      <Nav.Link href='/login'>Login</Nav.Link>
       )}
 
     </Nav>

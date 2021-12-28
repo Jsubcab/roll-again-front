@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './styles/Quote.css';
-import {Container, Row, Card, Button, ListGroup, ListGroupItem} from 'react-bootstrap';
+import {Card, Button, ListGroup, ListGroupItem} from 'react-bootstrap';
 
 const Quote = ({quote}) => {
     return (
