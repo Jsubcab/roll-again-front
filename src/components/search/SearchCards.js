@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Search from './SearchBar';
-import {Card, Button, CardGroup, Row} from 'react-bootstrap';
+import {Card, Button, CardGroup, Row, Col, Container} from 'react-bootstrap';
 import "../../styles/Search.css";
 
 const filterPosts = (posts, query) => {
@@ -27,27 +27,30 @@ export default function SearchCosa(products) {
             <div className="search-bar">
             <Search searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
             </div>
-            
-                <Row xs={2} md={3} className="search-row">
-                <CardGroup>
+            <Container>
+                <Row className="g-4">
+                    <Col>
+                    <CardGroup >
                     {filteredPosts.map(product =>
-                    <Card style={{ width: '12rem' }} key={product.id}>
-                    <Card.Img variant="top" src="holder.js/100px180" />
-                    <Card.Body>
-                        <Card.Title>{product.name}</Card.Title>
-                        <Card.Text>
-                        {product.description}
-               
-                        </Card.Text>
-                        <Button variant="primary">View</Button>
-                    </Card.Body>
-                    <Card.Footer>
-                        { <small className="text-muted">Seller: {product.user.username}</small>}
-                    </Card.Footer>
-                    </Card>
+                        <Card key={product.id} className="search-cards">
+                        <Card.Img variant="top" src="holder.js/100px180" />
+                        <Card.Body>
+                            <Card.Title>{product.name}</Card.Title>
+                            <Card.Text>
+                            {product.description}
+                
+                            </Card.Text>
+                            <Button variant="primary">View</Button>
+                        </Card.Body>
+                        <Card.Footer>
+                            { <small className="text-muted">Seller: {product.user.username}</small>}
+                        </Card.Footer>
+                        </Card>
                     )}
-                </CardGroup>
+                    </CardGroup>
+                </Col>
                 </Row>
+                </Container>
         </div>
     );
 }
