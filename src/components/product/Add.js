@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import Form from 'react-bootstrap/Form';
 import "../../styles/AddProduct.css";
-import PropTypes from 'prop-types';
 
 
 

@@ -1,6 +1,12 @@
-.search-panel{
+.search-bar{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin:20px 0px 20px 0px;
+}
+
+.search-form {
+    width:75%;
+    text-align: center;
 }

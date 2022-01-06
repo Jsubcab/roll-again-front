@@ -2,10 +2,10 @@ import React,  { useState, useEffect }  from 'react';
 import './index.css';
 import Navbar from './components/navbar/Navbar';
 import UserPanel from './components/user/UserPanel';
-import Search from './Search';
 import { Route, Switch } from 'react-router-dom';
 import Signin from './components/signin/Signin';
 import AddProduct from './components/product/Add';
+import Search from './components/search/Search';
 
 function App(){
 
@@ -16,13 +16,6 @@ function App(){
         setLoggedIn(true);
       }
     }, []);
-  
-    /*const handleLogin = (token) => {
-      if (!token) return;
-      localStorage.setItem("token", token);
-  
-      setLoggedIn(true);
-    };*/
   
     const handleLogout = () => () => {
       setLoggedIn(false);
