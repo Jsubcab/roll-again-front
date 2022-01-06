@@ -1,74 +1,44 @@
-# roll-again-front
-TFG project - Frontend
-=======
-# Getting Started with Create React App
+# Roll again - Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Proyecto de Trabajo de Final 2020-2021 de Grado para la Universitat Oberta de Catalunya por el estudiante Jsubcab que cursa el grado de Ingenieria en Informática.
 
-## Available Scripts
+### 1. Descripción
 
-In the project directory, you can run:
+Aplicativo web destinado a la compra/venta de productos de primera/segunda mano de juegos de mesa. Desarrollado en Java (Backend) y React (Frontend) con bases de datos propia en localhost (PostgreSQL).
 
-### `yarn start`
+Este repositorio contiene toda la información del Frontend que permitirá ejecutar una parte visual del proyecto.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Hay que tener en cuenta que el proyecto sigue en desarrollo y falta finalizar funciones descritas en el documento de entrega, como por ejemplo:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- (En desarrollo) Buscador.
+- (En desarrollo) Agregar producto.
+- Perfil de usuario.
+- Listado de ordendes.
+- Puntuar al usuario.
 
-### `yarn test`
+### 2. Como instalar y hacer funcionar el proyecto
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### 2.1 Software requerido
 
-### `yarn build`
+Para poder ejecutar el Frontend se necesitará instalar lo siguiente en el terminal:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- React (última versión).
+- React-boostrap.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### 2.2 Instrucciones para instalar
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Clonar repositorio.
 
-### `yarn eject`
+##### 2.2.2 IDE
+- Instalar Visual Studio Code.
+- Abrir carpeta del repositorio clonado.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Todas las dependencias están incluidas en el repositorio por lo que no haría falta instalarlas nuevamente.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 3. Como usar el proyecto
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Si bien se encuentra en fase de desarrollo, se puede comprobar el funcionamiento del login y de añadir productos.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### 4. Pruebas
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
->>>>>>> eba91ae... Initialize project using Create React App
+Las pruebas se pueden realizar con el Dev tool del navegador a elección.
